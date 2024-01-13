@@ -32,5 +32,7 @@ This function takes an input integer number, checks whether its a even or odd nu
 
 ![odd_even_program_output](https://github.com/Nagama30/CS332-532/assets/60808524/0cc47fe5-59e7-4ae5-918d-e69dfabecaa7)
 
-  
+# Link to github repository
+https://github.com/Nagama30/CS332-532/blob/main/odd_even.c
+
 
