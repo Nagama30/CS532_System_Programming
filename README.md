@@ -7,13 +7,13 @@
 
 ## For compiling the code through VS code terminal- 
 
+### Below command will compile the filename and return an executable file with the executable_name
   gcc -o <executable_name> <filename>
-  #this will compile the filename and return an executable file with the executable_name
+
   
   Example:
-  
+### Below command will compile odd_even.c file and returns odd_even executable
   gcc -o odd_even odd_even.c
-  #this will compile odd_even.c file and returns odd_even executable
   
 ## For executing the executable file-
 
