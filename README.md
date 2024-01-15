@@ -16,11 +16,11 @@ Example:
 #### Above command will compile odd_even.c file and returns odd_even executable
 ## For executing the executable file-
 
-  ./executable_name
+  .\executable_name
   
   Example:
   
-  ./odd_even
+  .\odd_even
 
 # My Files
 
