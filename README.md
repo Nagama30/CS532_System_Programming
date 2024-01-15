@@ -20,7 +20,7 @@ Example:
   
   Example:
   
-  .\odd_even
+  .\odd_even.exe
 
 # My Files
 
