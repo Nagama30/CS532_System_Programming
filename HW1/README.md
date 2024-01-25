@@ -32,6 +32,7 @@ This function contains series of user input and function calls mentioned below. 
 ### reverseNum()
 ### smallerThanIndex()
 ### arrayDetails()
+### sumDigit()
 
 # numberTransformer() 
 This function takes a positive integer ‘n’ as an argument and prints a string according to the following conditions: 
@@ -43,6 +44,7 @@ nearest prime number below ‘n’ (as a string).
 5. Otherwise, the function should return the square of the sum of the digits of ‘n’ (as a string).
 
    sample input - 64
+   
    sample output - 125 (64 + 61 (nearest prime number smaller than 64)
 
 # UABNumber()
@@ -70,6 +72,12 @@ the minimum value, the minimum value’s index, the mean (rounded to the nearest
    sample input - [-10, 20, 67, 30, 21, 1]
    sample input - -10, 0, 21, 67, 2 
 
+# sumDigit()
+This function is a helper function which calculates the sum of digits in a number.
+
+  sample input - 243
+  sample output - 9
+  
 # Output screenshots
 
 ![image](https://github.com/Nagama30/CS332-532/assets/60808524/17b9a85f-0371-4c81-a2d7-a56b043f7965)
