@@ -51,18 +51,21 @@ nearest prime number below ‘n’ (as a string).
 This function will ask the user to enter an integer and assign this value to an integer variable ‘n2’. Your function will return a Boolean value (True or False) if the entered number by user is a UABNumber. You will consider a number is a UABNumber if the value of the number is equal to the sum of its positive divisors. While finding the positive divisors, it do not include the number itself and assume ‘n2’ is equal or greater than 0.
 
   sample input - n2 = 28
+  
   sample output - True (1+2+4+7+14 = 28)
 
 # reverseNum()
 This function asks user to enter an integer number ‘n3’ and returns another integer. It will reverse the order of the digits and return the new value. 
 
   sample input - n3 = 00210
+  
   sample output - 01200
 
 # smallerThanIndex()
 This function takes an array of 5 integers (numbers) and returns an integer. The function will check every number’s value and their indices, count the number of integers in the array whose value is smaller than index and return the total. 
 
   sample input - [-2, 0, 10, 11, 2]
+  
   sample output - 3
 
 # arrayDetails()
@@ -70,12 +73,14 @@ This function takes in an array of 6 integers and prints another array containin
 the minimum value, the minimum value’s index, the mean (rounded to the nearest hundredth), the maximum value, and the maximum value’s index (total of five elements). 
 
    sample input - [-10, 20, 67, 30, 21, 1]
+   
    sample input - -10, 0, 21, 67, 2 
 
 # sumDigit()
 This function is a helper function which calculates the sum of digits in a number.
 
   sample input - 243
+  
   sample output - 9
   
 # Output screenshots
