@@ -13,7 +13,8 @@ make all        # this will compile all the files
 
 make run        # this will run all the files
 
-make run ARGS="<your args here>" 
+make run ARGS="<your args here>"
+
 ##### this will run the files with your args
   
 Example:
@@ -33,8 +34,6 @@ gcc -o <executable name> <filename>
 ##### this will compile the filename and return an executable with the executable name
 
 gcc -o file_copy file_copy.c                   
-##### this will compile gettime.c and output an executable called gettime
-
 #### Above command will compile file_copy.c file and returns file_copy executable
 
 ### For executing the executable file-
