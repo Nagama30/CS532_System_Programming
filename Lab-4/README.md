@@ -1,1 +1,57 @@
+# Requirements
+
++ Windows - https://code.visualstudio.com/docs/cpp/config-mingw 
++ Mac - https://code.visualstudio.com/docs/cpp/config-clang-mac
+
+# Compilation Instructions
+
+## If you are using a make file- 
+
+make clean # this will clean all .o and executable files
+make all# this will compile all the files
+make run # this will run all the files
+
+make run ARGS="<your args here>" # this will run the files with your args
+  
+Example:
+
+$ make clean
+$ make all
+$ make run File-1.txt File-2.txt
+
+
+## If you are not using a make file
+
+### For compiling the .c files
+
+gcc -o <executable name> <filename>  # this will compile the filename and return an executable with the executable name
+
+gcc -o file_copy file_copy.c # this will compile gettime.c and output an executable called gettime
+
+#### Above command will compile file_copy.c file and returns file_copy executable
+
+### For executing the executable file-
+
+  .\executable_name <arg1> <arg2>
+  
+  Example:
+  
+  .\file_copy File-1.txt File-2.txt
+  
+# My Files
+
+## main()
+
+This main function takes two files as an input from user. It reads the content of the file2 and copy the content into file1. After the program executes succcessfully, the first file will contain its original content and the contents of the second file. The second file will be unchanged.
+
+## Output screenshots
+
+
+
+
+# Link to github repository
+https://github.com/Nagama30/CS332-532
+
+
+
 
