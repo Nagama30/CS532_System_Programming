@@ -46,7 +46,7 @@ This main function takes two files as an input from user. It reads the content o
 
 ## Output screenshots
 
-
+![image](https://github.com/Nagama30/CS332-532/assets/60808524/3e52b2a8-dca0-4bd5-9894-ef00c36e1078)
 
 
 # Link to github repository
