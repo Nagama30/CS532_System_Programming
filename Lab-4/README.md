@@ -12,10 +12,6 @@ make clean      # this will clean all .o and executable files
 make all        # this will compile all the files
 
 make run        # this will run all the files
-
-make run ARGS="<your args here>"
-
-##### this will run the files with your args
   
 Example:
 
