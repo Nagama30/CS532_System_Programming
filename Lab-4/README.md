@@ -7,9 +7,9 @@
 
 ## If you are using a make file- 
 
-make clean # this will clean all .o and executable files
-make all# this will compile all the files
-make run # this will run all the files
+make clean      # this will clean all .o and executable files
+make all        # this will compile all the files
+make run        # this will run all the files
 
 make run ARGS="<your args here>" # this will run the files with your args
   
@@ -24,9 +24,9 @@ $ make run File-1.txt File-2.txt
 
 ### For compiling the .c files
 
-gcc -o <executable name> <filename>  # this will compile the filename and return an executable with the executable name
+gcc -o <executable name> <filename>            # this will compile the filename and return an executable with the executable name
 
-gcc -o file_copy file_copy.c # this will compile gettime.c and output an executable called gettime
+gcc -o file_copy file_copy.c                   # this will compile gettime.c and output an executable called gettime
 
 #### Above command will compile file_copy.c file and returns file_copy executable
 
