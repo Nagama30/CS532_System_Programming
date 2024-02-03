@@ -26,7 +26,7 @@ $ make run File-1.txt File-2.txt
 
 ### For compiling the .c files
 
-gcc -o <executable name> <filename>
+gcc -o <executable_name> <filename>
 
 ##### this will compile the filename and return an executable with the executable name
 
