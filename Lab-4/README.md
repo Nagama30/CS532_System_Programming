@@ -26,10 +26,12 @@ $ make run File-1.txt File-2.txt
 
 ### For compiling the .c files
 
-gcc -o <executable name> <filename>           
+gcc -o <executable name> <filename>
+
 ##### this will compile the filename and return an executable with the executable name
 
-gcc -o file_copy file_copy.c                   
+gcc -o file_copy file_copy.c
+
 #### Above command will compile file_copy.c file and returns file_copy executable
 
 ### For executing the executable file-
