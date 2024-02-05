@@ -16,7 +16,7 @@ $(EXECS): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
 run: $(EXECS)
-	./$(EXECS) arg1 arg2
+	./$(EXECS) $(ARGS)
 
 clean:
 	rm -f $(OBJS) $(EXECS)
