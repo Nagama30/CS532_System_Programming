@@ -19,7 +19,7 @@ $ make clean
 
 $ make all
 
-$ make run File-1.txt File-2.txt
+$ make run ARGS="File-1.txt File-2.txt"
 
 
 ## If you are not using a make file
