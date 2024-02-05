@@ -8,13 +8,15 @@ OBJS = file_copy.o
 EXECS = file_copy
 
 all: $(EXECS)
-	./$(EXECS) arg1 arg2
 
 %.o: %.c $(DEPS)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(EXECS): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
+
+run: $(EXECS)
+	$(EXCES) arg1 arg2
 
 clean:
 	rm -f $(OBJS) $(EXECS)
