@@ -6,87 +6,79 @@
 
 # Compilation Instructions
 
-## For compiling the code through VS code terminal- 
+## If you are using a make file- 
 
-#### Below command will compile the filename and return an executable file with the executable_name
-  gcc -o <executable_name> <filename.c>
+make clean      # this will clean all .o and executable files
+
+make all        # this will compile all the files
+
+make run        # this will run all the files
   
 Example:
 
-  gcc -o HomeworkAssignment HomeworkAssignment.c
-#### Above command will compile HomeworkAssignment.c file and returns HomeworkAssignment executable
-## For executing the executable file-
+$ make clean
 
-  .\executable_name
+$ make all
+
+$ make run ARGS="<provide command-line arguments here>"
+
+
+## If you are not using a make file
+
+### For compiling the .c files
+
+gcc -o <executable_name> <file_name>
+
+##### this will compile the filename and return an executable with the executable name
+
+gcc -o njamadar_HW02 njamadar_HW02.c
+
+##### Above command will compile njamadar_HW02.c file and returns njamadar_HW02 executable
+
+### For executing the executable file-
+
+  .\executable_name <arg1> <arg2>
   
   Example:
   
-  .\HomeworkAssignment
+  .\njamadar_HW02 -v -L 20 -s READ 3 ./projects
+  
 
 # My Files
 
 ## main()
 
-This function contains series of user input and function calls mentioned below. Each function does a specific job elaborated in the next section.
-### numberTransformer()
-### UABNumber()
-### reverseNum()
-### smallerThanIndex()
-### arrayDetails()
-### sumDigit()
+The program accepts as an input (command-line argument) the directory name from where to start the file traversal and print the file hierarchy starting with that directory. If the program is executed without any arguments, the program should print the file hierarchy starting with the current directory where the program is executed.
+The program should also support three command-line options:
+1. -v “More Details”: This should list all files in the hierarchy and print the size (in bytes), permissions (symbolic or octal representation), and last access date & time next to the filename in parenthesis (format: “Jan 17 13:00:00 2024”). Print 0 for the size of a directory.
+2. -L <file size in bytes> “Large Files”: This should list all files in the hierarchy with a file size greater than or equal to the value specified.
+3. -s <string pattern> <depth> “Search String”: This should list all files in the hierarchy that satisfy the following conditions: 1) the file name contains the substring in the string pattern option, AND 2) the depth of the file relative to the starting directory of the traversal is less than or equal to the depth ption. The starting directory itself has a depth of 0.
+4. “File Types”: The program should support a fourth commandline option:
+  a. -t f - List regular files only (no directories, symbolic links, etc). Must still show indentations to indicate the transversal of directories. Must still be able to be combined with other arguments.
+  b. -t d - List directories only (‘directory’ file types). Must still show indentations to indicate the transversal of directories. Must still be able to be combined with other arguments.
+### printCommon()
+### printDetails()
+### printLargeFiles()
+### searchString()
+### traverseDirectory()
 
-# numberTransformer() 
-This function takes a positive integer ‘n’ as an argument and prints a string according to the following conditions: 
-1. If ‘n’ is a prime number other than 3 or 5, the function should return: "Go Blazers". 
-2. If ‘n’ is a power of 2 (e.g., 1, 2, 4, 8, ...), the function should return the result of adding ‘n’ and the 
-nearest prime number below ‘n’ (as a string). 
-3. If the sum of the digits of ‘n’ is divisible by 3, the function should return: "CS". 
-4. If ‘n’ is divisible by both 3 and 5, the function should return: "UAB CS 332&532". 
-5. Otherwise, the function should return the square of the sum of the digits of ‘n’ (as a string).
+# printCommon() 
+This function displays the file details such as file size, file mode and file last access date & time if -v flag is set, else it displays file name only. 
 
-   sample input - 64
-   
-   sample output - 125 (64 + 61 (nearest prime number smaller than 64)
+# printDetails()
+This function primarily displays the file structure from the provided path at command line argument. It also checks if other flags are provided. 
 
-# UABNumber()
-This function will ask the user to enter an integer and assign this value to an integer variable ‘n2’. Your function will return a Boolean value (True or False) if the entered number by user is a UABNumber. You will consider a number is a UABNumber if the value of the number is equal to the sum of its positive divisors. While finding the positive divisors, it do not include the number itself and assume ‘n2’ is equal or greater than 0.
+# printLargeFiles()
+This function primarily displays the files that are larger in size than the provided file size in the command line argument. It also checks if other flags are provided.
 
-  sample input - n2 = 28
-  
-  sample output - True (1+2+4+7+14 = 28)
+# searchString()
+This function primarily displays the files which file's name has the character string provided in the command line argument. It also checks if other flags are provided.
 
-# reverseNum()
-This function asks user to enter an integer number ‘n3’ and returns another integer. It will reverse the order of the digits and return the new value. 
-
-  sample input - n3 = 00210
-  
-  sample output - 01200
-
-# smallerThanIndex()
-This function takes an array of 5 integers (numbers) and returns an integer. The function will check every number’s value and their indices, count the number of integers in the array whose value is smaller than index and return the total. 
-
-  sample input - [-2, 0, 10, 11, 2]
-  
-  sample output - 3
-
-# arrayDetails()
-This function takes in an array of 6 integers and prints another array containing (in the following order): 
-the minimum value, the minimum value’s index, the mean (rounded to the nearest hundredth), the maximum value, and the maximum value’s index (total of five elements). 
-
-   sample input - [-10, 20, 67, 30, 21, 1]
-   
-   sample input - -10, 0, 21, 67, 2 
-
-# sumDigit()
-This function is a helper function which calculates the sum of digits in a number.
-
-  sample input - 243
-  
-  sample output - 9
+# traverseDirectory()
+This function starts to traverse of the directory starting from either current working directory or provided directory in the command line argument.
   
 # Output screenshots
-
-![image](https://github.com/Nagama30/CS332-532/assets/60808524/17b9a85f-0371-4c81-a2d7-a56b043f7965)
+![image](https://github.com/Nagama30/CS332-532/assets/60808524/393c9d03-bce3-416c-8a21-b662af1b78fa)
 
 
 # Link to github repository
