@@ -154,7 +154,7 @@ void traverseDirectory(const char *dir_path, int depth, PrintFunction printFunc,
     while ((entry = readdir(dir)) != NULL) 
     {
         //get the information of file into statbuf using stat structre
-        stat(entry->d_name, &statbuf);
+        lstat(entry->d_name, &statbuf);
         //check if the present entry is directory 
         if (S_ISDIR(statbuf.st_mode)) 
         {
