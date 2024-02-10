@@ -20,7 +20,7 @@ $ make clean
 
 $ make all
 
-$ make run ARGS="<provide command-line arguments here>"
+$ make run ARGS = " <provide command line arguments here> "
 
 
 ## If you are not using a make file
@@ -53,7 +53,7 @@ The program should also support three command-line options:
 1. -v “More Details”: This should list all files in the hierarchy and print the size (in bytes), permissions (symbolic or octal representation), and last access date & time next to the filename in parenthesis (format: “Jan 17 13:00:00 2024”). Print 0 for the size of a directory.
 2. -L <file size in bytes> “Large Files”: This should list all files in the hierarchy with a file size greater than or equal to the value specified.
 3. -s <string pattern> <depth> “Search String”: This should list all files in the hierarchy that satisfy the following conditions: 1) the file name contains the substring in the string pattern option, AND 2) the depth of the file relative to the starting directory of the traversal is less than or equal to the depth ption. The starting directory itself has a depth of 0.
-4. “File Types”: The program should support a fourth commandline option:
+4. “File Types”: The program should support a fourth command line option:
   a. -t f - List regular files only (no directories, symbolic links, etc). Must still show indentations to indicate the transversal of directories. Must still be able to be combined with other arguments.
   b. -t d - List directories only (‘directory’ file types). Must still show indentations to indicate the transversal of directories. Must still be able to be combined with other arguments.
 ### printCommon()
