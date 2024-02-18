@@ -22,6 +22,8 @@ Example:
   Example:
   
   .\listing
+  or 
+  .\listing > Output.txt
 
 # My Files
 
