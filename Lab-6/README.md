@@ -17,13 +17,13 @@ Example:
 #### Above command will compile listing.c file and returns listing executable
 ## For executing the executable file-
 
-  .\executable_name <command line arguments>
+  ./executable_name <command line arguments>
   
   Example:
   
-  .\listing
+  ./listing
   or 
-  .\listing > Output.txt
+  ./listing > Output.txt
 
 # My Files
 
