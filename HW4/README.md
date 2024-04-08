@@ -101,6 +101,11 @@ If a job has finished (result > 0), it updates the job status to "success", reco
   
 # Output screenshots
 
+![image](https://github.com/Nagama30/CS332-532/assets/60808524/6400a6d1-2b56-4133-8a6d-85900e73c68a)
+
+![image](https://github.com/Nagama30/CS332-532/assets/60808524/46f2577f-15c9-4636-b1e5-7153f17df21f)
+
+![image](https://github.com/Nagama30/CS332-532/assets/60808524/b3e038f9-3a2d-48ea-8fb7-8c3e3429fd46)
 
 
 # Link to github repository
